@@ -15,8 +15,6 @@ def print_vote_difference():
     print("{:,}".format(trump - joe))
     return
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     while True:
         print_vote_difference()
