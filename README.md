@@ -1,3 +1,3 @@
-# Pennsylvania election tracker
+# Swing State election tracker
 
-Prints out Trump's diminising lead in PA every 60 seconds!
+Prints out swing state status every 10 minutes!
