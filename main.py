@@ -18,19 +18,19 @@ def print_vote_difference(state_name: str, url: str):
     else:
         leader_text = "Biden Leads"
         lead = -lead
-    print("{}: {} {:,}".format(state_name, leader_text, lead))
+    print("{} {} {:,}".format(state_name, leader_text, lead))
     return
 
 
 if __name__ == '__main__':
     urls = {
-        'Pennsylvania': 'https://www.washingtonpost.com/elections/election-results/pennsylvania-2020/',
-        'Georgia': 'https://www.washingtonpost.com/elections/election-results/georgia-2020/',
-        'Nevada': 'https://www.washingtonpost.com/elections/election-results/nevada-2020/',
-        'Arizona': 'https://www.washingtonpost.com/elections/election-results/arizona-2020/'
+        'Pennsylvania:': 'https://www.washingtonpost.com/elections/election-results/pennsylvania-2020/',
+        'Georgia:     ': 'https://www.washingtonpost.com/elections/election-results/georgia-2020/',
+        'Nevada:      ': 'https://www.washingtonpost.com/elections/election-results/nevada-2020/',
+        'Arizona:     ': 'https://www.washingtonpost.com/elections/election-results/arizona-2020/'
     }
     while True:
         for state_name, url in urls.items():
             print_vote_difference(state_name, url)
         print()  # prints a space
-        time.sleep(600)
+        time.sleep(300)
